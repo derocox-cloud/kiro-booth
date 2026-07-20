@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40" aria-label="Kiro">
+  <defs>
+    <linearGradient id="kiro-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a371f7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Ícono: corchete angular estilizado -->
+  <path d="M10 8 L2 20 L10 32" stroke="url(#kiro-grad)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 8 L26 20 L18 32" stroke="url(#kiro-grad)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Texto: Kiro -->
+  <text x="34" y="27" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="22" font-weight="800" fill="url(#kiro-grad)">Kiro</text>
+</svg>

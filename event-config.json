@@ -1,0 +1,99 @@
+{
+  "eventName": "Kiro Booth - AWS Student Community Day Colombia 2026",
+  "challenge": {
+    "title": "Construye una App para el aprendizaje de AWS con Flash Cards haciendo uso de GenAI",
+    "description": "Usa Kiro para generar el spec, diseñar la app y escribir el código de una App que permite aprender sobre AWS con flash cards y haciendo uso de GenAI",
+    "steps": [
+      "Descarga e instala Kiro",
+      "Crea un nuevo proyecto y abre Kiro",
+      "Pídele a Kiro que genere el Spec",
+      "Revisa y aprueba el diseño generado",
+      "Ejecuta las tareas de implementación con Kiro"
+    ],
+    "successCriteria": [
+      "El spec fue generado y aprobado",
+      "Uso de las herramientas: MCP, Steerings, Skill, Powers, etc",
+      "El código fue generado usando Kiro"
+    ]
+  },
+  "communityResources": [
+    {
+      "name": "Cómo comenzar con Kiro: tu guía de primeros pasos",
+      "description": "Guía introductoria por Ana Cunha — AWS Advocate.",
+      "url": "https://builder.aws.com/content/34X2JujaGkTJed5N2KeMYt1Mz9m/como-comenzar-con-kiro-tu-guia-de-primeros-pasos",
+      "type": "builder"
+    },
+    {
+      "name": "Guía completa de Kiro para desarrolladores",
+      "description": "Referencia completa por Ana Cunha — AWS Advocate.",
+      "url": "https://builder.aws.com/content/3BE2sI4wPbBBaAdxc7IB9zHJyg0/guia-completa-de-kiro-para-desarrolladores",
+      "type": "builder"
+    },
+    {
+      "name": "IA DLC con Kiro — Parte 1",
+      "description": "Serie IA DLC con Kiro por Jose Verbel - AWS Community Builder",
+      "url": "https://builder.aws.com/content/32l0KnOT77V0wIiMSyHKtDS8TYu/ia-dlc-con-kiro-parte-1",
+      "type": "builder"
+    },
+    {
+      "name": "IA DLC con Kiro — Parte 2",
+      "description": "Serie IA DLC con Kiro por Jose Verbel - AWS Community Builder",
+      "url": "https://builder.aws.com/content/37FCICvpJqFXayeUFk93cSStH2R/ia-dlc-con-kiro-parte-2",
+      "type": "builder"
+    },
+    {
+      "name": "IA DLC con Kiro — Parte 3",
+      "description": "Serie IA DLC con Kiro por Jose Verbel - AWS Community Builder",
+      "url": "https://builder.aws.com/content/37ydKyTyLk1NUd6sb0QJKGGYUcR/ia-dlc-con-kiro-parte-3",
+      "type": "builder"
+    },
+    {
+      "name": "Space: Spec-Driven Development con Kiro",
+      "description": "Espacio de la comunidad en Builder Center sobre SDD con Kiro.",
+      "url": "https://builder.aws.com/connect/space/c04d52ca-ac33-331f-8fdd-d39007d9e8fe/spec-driven-development-amazon-q-developer-kiro-es",
+      "type": "builder"
+    },
+    {
+      "name": "Más allá del Vibe Coding con Amazon Kiro",
+      "description": "Video por Jose Verbel - AWS Community Builder",
+      "url": "https://www.youtube.com/watch?v=_6a4oSl8LeY",
+      "type": "youtube"
+    },
+    {
+      "name": "Spec Driven Development en el mundo real con Amazon Kiro",
+      "description": "Live por Jose Verbel - AWS Community Builder",
+      "url": "https://www.youtube.com/live/gR6gTzWIUjY",
+      "type": "youtube"
+    },
+    {
+      "name": "De 100 a 400 con Amazon Kiro + Powers",
+      "description": "Video por Jose Verbel - AWS Community Builder",
+      "url": "https://www.youtube.com/watch?v=f1KTTZ0Dqts",
+      "type": "youtube"
+    },
+    {
+      "name": "Orquestando agentes para desarrollo en Kiro CLI",
+      "description": "Video por Jose Verbel - AWS Community Builder",
+      "url": "https://youtu.be/xqM5qZ6kNqk?t=4503",
+      "type": "youtube"
+    },
+    {
+      "name": "Playlist Kiro — AWS Developers Latam",
+      "description": "Colección oficial de videos sobre Kiro en español.",
+      "url": "https://www.youtube.com/playlist?list=PLQHh55hXC4ypajJTYTf7eSq3N-dD63gtO",
+      "type": "youtube"
+    },
+    {
+      "name": "Guía rápida de Kiro",
+      "description": "Guía rápida por Camilo Gallego.",
+      "url": "https://d2mk3k0ydiqhk4.cloudfront.net/",
+      "type": "other"
+    },
+    {
+      "name": "Kiro Usage Analytics",
+      "description": "Herramienta de reportería que genera reportes de uso de Kiro a partir de logs en AWS S3. Analiza comportamiento de desarrolladores, créditos consumidos, interacciones, categorización de prompts, análisis AI vía Amazon Bedrock y recomendaciones.",
+      "url": "https://builder.aws.com/content/3GeCypaGCku8Oulbid3pwv5hS9w/kiro-usage-analytics",
+      "type": "projects"
+    }
+  ]
+}

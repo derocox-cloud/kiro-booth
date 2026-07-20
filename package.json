@@ -1,0 +1,16 @@
+{
+  "name": "kiro-booth-landing",
+  "version": "1.0.0",
+  "description": "Landing page estática para el booth de Kiro en eventos de tecnología.",
+  "type": "module",
+  "scripts": {
+    "test": "./run-vitest.sh run",
+    "test:watch": "./run-vitest.sh",
+    "test:coverage": "./run-vitest.sh run --coverage"
+  },
+  "devDependencies": {
+    "fast-check": "3.22.0",
+    "jsdom": "25.0.1",
+    "vitest": "2.1.8"
+  }
+}
