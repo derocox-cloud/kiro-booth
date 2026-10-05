@@ -1,14 +1,13 @@
 {
-  "eventName": "Kiro Booth - AWS Student Community Day Colombia 2026",
+  "eventName": "Kiro LATAM - Kiro University Challenge",
   "challenge": {
-    "title": "Construye una App para el aprendizaje de AWS con Flash Cards haciendo uso de GenAI",
-    "description": "Usa Kiro para generar el spec, diseñar la app y escribir el código de una App que permite aprender sobre AWS con flash cards y haciendo uso de GenAI",
+    "title": "Kiro University Challenge",
+    "description": "El Kiro University Challenge ya está oficialmente en marcha!\n\n¿Buscas llevar tus habilidades de desarrollo al siguiente nivel y construir un proyecto real?\nDurante esta semana, Kiro University presenta un reto práctico e intensivo para desarrolladores. Completa las lecciones diarias, presenta tu proyecto final y obtén 5.500 créditos Kiro.\nYa sea que estés construyendo tu primer proyecto o explorando nuevas herramientas, esta es tu oportunidad para experimentar, aprender y mostrar tu talento.\n\n¡Acepta el desafío y comparte con la comunidad de lo que eres capaz!",
     "steps": [
-      "Descarga e instala Kiro",
-      "Crea un nuevo proyecto y abre Kiro",
-      "Pídele a Kiro que genere el Spec",
-      "Revisa y aprueba el diseño generado",
-      "Ejecuta las tareas de implementación con Kiro"
+      "🔹 Lecciones 1 y 2 disponibles hoy: Comienza en https://kiro.dev/2026/university/",
+      "🔹 Contenido: 7 lecciones prácticas a lo largo de la semana",
+      "🔹 Presentación final: Entrega tu proyecto completado el 5 de octubre",
+      "🔹 ¿Quién puede participar?: Abierto a estudiantes, quienes inician en la programación y desarrolladores que buscan actualizar su stack"
     ],
     "successCriteria": [
       "El spec fue generado y aprobado",
@@ -30,21 +29,27 @@
       "type": "builder"
     },
     {
-      "name": "IA DLC con Kiro — Parte 1",
-      "description": "Serie IA DLC con Kiro por Jose Verbel - AWS Community Builder",
+      "name": "AI DLC con Kiro — Parte 1",
+      "description": "Serie AI DLC con Kiro por Jose Verbel - AWS Community Builder",
       "url": "https://builder.aws.com/content/32l0KnOT77V0wIiMSyHKtDS8TYu/ia-dlc-con-kiro-parte-1",
       "type": "builder"
     },
     {
-      "name": "IA DLC con Kiro — Parte 2",
-      "description": "Serie IA DLC con Kiro por Jose Verbel - AWS Community Builder",
+      "name": "AI DLC con Kiro — Parte 2",
+      "description": "Serie AI DLC con Kiro por Jose Verbel - AWS Community Builder",
       "url": "https://builder.aws.com/content/37FCICvpJqFXayeUFk93cSStH2R/ia-dlc-con-kiro-parte-2",
       "type": "builder"
     },
     {
-      "name": "IA DLC con Kiro — Parte 3",
-      "description": "Serie IA DLC con Kiro por Jose Verbel - AWS Community Builder",
+      "name": "AI DLC con Kiro — Parte 3",
+      "description": "Serie AI DLC con Kiro por Jose Verbel - AWS Community Builder",
       "url": "https://builder.aws.com/content/37ydKyTyLk1NUd6sb0QJKGGYUcR/ia-dlc-con-kiro-parte-3",
+      "type": "builder"
+    },
+    {
+      "name": "De Logo a Kiro: lo que no cambió en el camino",
+      "description": "De una tortuga que dibujaba con instrucciones a un fantasma que construye con specs.",
+      "url": "https://builder.aws.com/content/3JIrFB4zdIUrpgmGbAdvtOI3rE8/de-logo-a-kiro-lo-que-no-cambio-en-el-camino",
       "type": "builder"
     },
     {
@@ -75,6 +80,12 @@
       "name": "Orquestando agentes para desarrollo en Kiro CLI",
       "description": "Video por Jose Verbel - AWS Community Builder",
       "url": "https://youtu.be/xqM5qZ6kNqk?t=4503",
+      "type": "youtube"
+    },
+    {
+      "name": "DevSecOps: Asegura tus pipelines con Kiro en Modo Headless",
+      "description": "Video por Jose Verbel - AWS Community Builder",
+      "url": "https://www.youtube.com/live/XhtVFGtv0TA?si=tMgohwQyKG-Ix_tz",
       "type": "youtube"
     },
     {

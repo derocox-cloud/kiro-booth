@@ -127,81 +127,94 @@
           <div class="download__steps">
             <h3 class="download__subtitle">Pasos de instalación</h3>
             <ol class="steps-list" aria-label="Pasos de instalación de Kiro">
-              <li>Descarga el instalador para tu sistema operativo desde los enlaces de abajo.</li>
-              <li>Ejecuta el instalador y sigue las instrucciones en pantalla.</li>
-              <li>Abre Kiro una vez instalado.</li>
+              <li>Elige la versión de Kiro que mejor se adapte a tu flujo de trabajo entre las opciones de la derecha.</li>
+              <li>Entra al sitio oficial de esa versión y descarga o inicia Kiro según las instrucciones.</li>
               <li>Inicia sesión con tu cuenta de AWS Builder ID (gratuita) o Builder ID existente.</li>
               <li>¡Listo! Abre un proyecto y empieza a trabajar con Kiro.</li>
             </ol>
           </div>
 
-          <!-- Descargas por SO -->
+          <!-- Versiones de Kiro -->
           <div class="download__os">
-            <h3 class="download__subtitle">Elige tu sistema operativo</h3>
-            <ul class="os-list" role="list" aria-label="Descargas por sistema operativo">
-              <li class="os-card" data-os="macos">
-                <span class="os-card__icon" aria-hidden="true">🍎</span>
+            <h3 class="download__subtitle">Elige tu versión favorita</h3>
+            <ul class="os-list" role="list" aria-label="Versiones de Kiro">
+              <li class="os-card" data-kiro="ide">
+                <span class="os-card__icon" aria-hidden="true">💻</span>
                 <div>
-                  <h4 class="os-card__name">macOS</h4>
-                  <p class="os-card__req">macOS 12 (Monterey) o superior · Apple Silicon y Intel</p>
+                  <h4 class="os-card__name">Kiro IDE</h4>
+                  <p class="os-card__req">El IDE de escritorio con IA para macOS, Windows y Linux.</p>
                   <a
-                    href="https://desktop-release.kiro.dev/latest/darwin/arm64/Kiro.dmg"
+                    href="https://kiro.dev/ide/"
                     class="btn btn--download"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Descargar Kiro para macOS Apple Silicon"
+                    aria-label="Conocer Kiro IDE en el sitio oficial"
                   >
-                    Descargar para macOS (Apple Silicon)
-                  </a>
-                  <a
-                    href="https://desktop-release.kiro.dev/latest/darwin/x64/Kiro.dmg"
-                    class="btn btn--download btn--download-alt"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Descargar Kiro para macOS Intel"
-                  >
-                    Descargar para macOS (Intel)
+                    Ir a Kiro IDE
                   </a>
                 </div>
               </li>
-              <li class="os-card" data-os="windows">
-                <span class="os-card__icon" aria-hidden="true">🪟</span>
+              <li class="os-card" data-kiro="cli">
+                <span class="os-card__icon" aria-hidden="true">⌨️</span>
                 <div>
-                  <h4 class="os-card__name">Windows</h4>
-                  <p class="os-card__req">Windows 10 (64-bit) o superior</p>
+                  <h4 class="os-card__name">Kiro CLI</h4>
+                  <p class="os-card__req">La potencia de Kiro directamente en tu terminal.</p>
                   <a
-                    href="https://desktop-release.kiro.dev/latest/win32/x64/KiroSetup.exe"
+                    href="https://kiro.dev/cli/"
                     class="btn btn--download"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Descargar Kiro para Windows"
+                    aria-label="Conocer Kiro CLI en el sitio oficial"
                   >
-                    Descargar para Windows
+                    Ir a Kiro CLI
                   </a>
                 </div>
               </li>
-              <li class="os-card" data-os="linux">
-                <span class="os-card__icon" aria-hidden="true">🐧</span>
+              <li class="os-card" data-kiro="mobile">
+                <span class="os-card__icon" aria-hidden="true">📱</span>
                 <div>
-                  <h4 class="os-card__name">Linux</h4>
-                  <p class="os-card__req">Ubuntu 20.04 / Debian 10 o distro compatible · x64</p>
+                  <h4 class="os-card__name">Kiro Mobile</h4>
+                  <p class="os-card__req">Lleva Kiro contigo desde tu dispositivo móvil.</p>
                   <a
-                    href="https://desktop-release.kiro.dev/latest/linux/x64/kiro.deb"
+                    href="https://kiro.dev/mobile/"
                     class="btn btn--download"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Descargar Kiro para Linux (.deb)"
+                    aria-label="Conocer Kiro Mobile en el sitio oficial"
                   >
-                    Descargar para Linux (.deb)
+                    Ir a Kiro Mobile
                   </a>
+                </div>
+              </li>
+              <li class="os-card" data-kiro="web">
+                <span class="os-card__icon" aria-hidden="true">🌐</span>
+                <div>
+                  <h4 class="os-card__name">Kiro Web</h4>
+                  <p class="os-card__req">Usa Kiro desde el navegador, sin instalar nada.</p>
                   <a
-                    href="https://desktop-release.kiro.dev/latest/linux/x64/kiro.rpm"
-                    class="btn btn--download btn--download-alt"
+                    href="https://kiro.dev/web/"
+                    class="btn btn--download"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Descargar Kiro para Linux (.rpm)"
+                    aria-label="Conocer Kiro Web en el sitio oficial"
                   >
-                    Descargar para Linux (.rpm)
+                    Ir a Kiro Web
+                  </a>
+                </div>
+              </li>
+              <li class="os-card" data-kiro="crew">
+                <span class="os-card__icon" aria-hidden="true">🤝</span>
+                <div>
+                  <h4 class="os-card__name">Kiro Crew</h4>
+                  <p class="os-card__req">Colabora con agentes de IA trabajando en equipo.</p>
+                  <a
+                    href="https://kiro.dev/crew/"
+                    class="btn btn--download"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Conocer Kiro Crew en el sitio oficial"
+                  >
+                    Ir a Kiro Crew
                   </a>
                 </div>
               </li>
@@ -267,22 +280,15 @@
   <footer class="footer" role="contentinfo">
     <div class="footer__inner">
       <p class="footer__text">
-        &copy; AWS Community 2026
+        &copy; Sitio no Oficial de Kiro
       </p>
       <p class="footer__text">
-        <a
-          href="https://www.linktree.com/awsugmed"
-          class="footer__link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Apoya @awsugmed</a>
-        ·
         <a
           href="https://www.linktree.com/derocox"
           class="footer__link"
           target="_blank"
           rel="noopener noreferrer"
-        >@derocox.cloud</a>
+        >Apoya @derocox.cloud</a>
       </p>
     </div>
   </footer>

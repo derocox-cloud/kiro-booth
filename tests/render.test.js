@@ -260,7 +260,10 @@ describe('Property 3 — Campos faltantes muestran placeholders', () => {
 import { renderResources } from '../app.js';
 
 /** Árbitro de tipo de recurso */
-const resourceTypeArb = fc.constantFrom('docs', 'github', 'community', 'social');
+const resourceTypeArb = fc.constantFrom(
+  'docs', 'github', 'community', 'social',
+  'builder', 'youtube', 'projects', 'other',
+);
 
 /**
  * String seguro para atributos HTML: excluye caracteres que escapeHtml no codifica
@@ -326,30 +329,42 @@ describe('Property 4 — Recursos renderizados contienen nombre, descripción y 
           const listEl = global.document.getElementById('community-resources');
           const items = listEl.querySelectorAll('li.resource-card');
 
-          // Debe haber exactamente el mismo número de <li> que de recursos
+          // Debe haber exactamente el mismo número de tarjetas que de recursos.
+          // Nota: renderResources() agrupa los recursos por tipo, por lo que el
+          // orden de las tarjetas en el DOM no coincide necesariamente con el
+          // orden del array de entrada. La validación del Requirement 4.1 es de
+          // presencia (name, description y href correctos por recurso), no de
+          // orden, así que emparejamos por contenido en lugar de por posición.
           if (items.length !== resources.length) return false;
 
-          for (let i = 0; i < resources.length; i++) {
-            const resource = resources[i];
-            const li = items[i];
-
-            // Verificar name
+          // Extraer la tripleta (name, desc, href) renderizada de cada tarjeta.
+          const rendered = Array.from(items).map((li) => {
             const nameEl = li.querySelector('.resource-card__name');
-            if (!nameEl) return false;
-            if (nameEl.textContent !== resource.name) return false;
-
-            // Verificar description
             const descEl = li.querySelector('.resource-card__desc');
-            if (!descEl) return false;
-            if (descEl.textContent !== resource.description) return false;
-
-            // Verificar enlace con href correcto
             const linkEl = li.querySelector('a');
-            if (!linkEl) return false;
-            if (linkEl.getAttribute('href') !== resource.url) return false;
+            return {
+              name: nameEl ? nameEl.textContent : null,
+              description: descEl ? descEl.textContent : null,
+              href: linkEl ? linkEl.getAttribute('href') : null,
+            };
+          });
+
+          // Cada recurso de entrada debe tener una tarjeta renderizada que lo
+          // represente exactamente. Consumimos coincidencias para respetar
+          // duplicados (multiset match).
+          const remaining = rendered.slice();
+          for (const resource of resources) {
+            const idx = remaining.findIndex(
+              (r) =>
+                r.name === resource.name &&
+                r.description === resource.description &&
+                r.href === resource.url,
+            );
+            if (idx === -1) return false;
+            remaining.splice(idx, 1);
           }
 
-          return true;
+          return remaining.length === 0;
         }),
         { numRuns: 100 },
       );
