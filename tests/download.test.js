@@ -8,10 +8,10 @@
 //
 // Feature: kiro-booth-landing, Property 8
 //
-// Property 8: Cada SO soportado tiene un enlace de descarga
-//   Para cada sistema operativo listado en la sección `#download`
-//   (macOS, Windows, Linux), debe existir al menos un elemento `<a>`
-//   visible con un `href` no vacío.
+// Property 8: Cada versión de Kiro tiene un enlace al sitio oficial
+//   Para cada versión de Kiro listada en la sección `#download`
+//   (IDE, CLI, Mobile, Web, Crew), debe existir al menos un elemento
+//   `<a>` visible con un `href` no vacío que apunte a kiro.dev.
 //   Valida: Requisito 2.3
 
 import { describe, it, beforeAll } from 'vitest';
@@ -57,73 +57,50 @@ describe('Property 7 — Lista de pasos de instalación es una lista ordenada', 
   );
 });
 
-// ─── Property 8: Cada SO tiene al menos un enlace de descarga ────────────────
+// ─── Property 8: Cada versión de Kiro tiene al menos un enlace oficial ───────
 
-describe('Property 8 — Cada sistema operativo tiene un enlace de descarga', () => {
+describe('Property 8 — Cada versión de Kiro tiene un enlace al sitio oficial', () => {
   /**
    * Validates: Requirement 2.3
    *
-   * Para cada uno de los tres SO soportados (macOS, Windows, Linux),
-   * debe existir al menos un <a> con un href no vacío dentro de su contenedor.
+   * Para cada versión de Kiro listada en la sección #download
+   * (IDE, CLI, Mobile, Web, Crew), debe existir al menos un <a> con un
+   * href no vacío que apunte a su página en kiro.dev.
    */
 
-  it(
-    'Valida: Requirement 2.3 — macOS tiene al menos un enlace de descarga con href no vacío',
-    () => {
-      const section = document.querySelector('#download');
-      expect(section, 'La sección #download debe existir').toBeTruthy();
+  const versions = [
+    { key: 'ide', label: 'Kiro IDE' },
+    { key: 'cli', label: 'Kiro CLI' },
+    { key: 'mobile', label: 'Kiro Mobile' },
+    { key: 'web', label: 'Kiro Web' },
+    { key: 'crew', label: 'Kiro Crew' },
+  ];
 
-      // Buscar por data-os="macos" o por href que contenga "darwin"
-      let link = section.querySelector('[data-os="macos"] a[href]');
-      if (!link) {
-        link = section.querySelector('a[href*="darwin"]');
-      }
+  for (const { key, label } of versions) {
+    it(
+      `Valida: Requirement 2.3 — ${label} tiene al menos un enlace a kiro.dev con href no vacío`,
+      () => {
+        const section = document.querySelector('#download');
+        expect(section, 'La sección #download debe existir').toBeTruthy();
 
-      expect(link, 'macOS debe tener al menos un <a href> dentro de #download').toBeTruthy();
-      expect(
-        link.getAttribute('href').trim().length,
-        'El href de macOS no debe estar vacío',
-      ).toBeGreaterThan(0);
-    },
-  );
+        // Buscar por data-kiro="<key>" o por href que apunte a kiro.dev/<key>/
+        let link = section.querySelector(`[data-kiro="${key}"] a[href]`);
+        if (!link) {
+          link = section.querySelector(`a[href*="kiro.dev/${key}"]`);
+        }
 
-  it(
-    'Valida: Requirement 2.3 — Windows tiene al menos un enlace de descarga con href no vacío',
-    () => {
-      const section = document.querySelector('#download');
-      expect(section, 'La sección #download debe existir').toBeTruthy();
+        expect(
+          link,
+          `${label} debe tener al menos un <a href> dentro de #download`,
+        ).toBeTruthy();
 
-      // Buscar por data-os="windows" o por href que contenga "win32"
-      let link = section.querySelector('[data-os="windows"] a[href]');
-      if (!link) {
-        link = section.querySelector('a[href*="win32"]');
-      }
-
-      expect(link, 'Windows debe tener al menos un <a href> dentro de #download').toBeTruthy();
-      expect(
-        link.getAttribute('href').trim().length,
-        'El href de Windows no debe estar vacío',
-      ).toBeGreaterThan(0);
-    },
-  );
-
-  it(
-    'Valida: Requirement 2.3 — Linux tiene al menos un enlace de descarga con href no vacío',
-    () => {
-      const section = document.querySelector('#download');
-      expect(section, 'La sección #download debe existir').toBeTruthy();
-
-      // Buscar por data-os="linux" o por href que contenga "linux"
-      let link = section.querySelector('[data-os="linux"] a[href]');
-      if (!link) {
-        link = section.querySelector('a[href*="linux"]');
-      }
-
-      expect(link, 'Linux debe tener al menos un <a href> dentro de #download').toBeTruthy();
-      expect(
-        link.getAttribute('href').trim().length,
-        'El href de Linux no debe estar vacío',
-      ).toBeGreaterThan(0);
-    },
-  );
+        const href = link.getAttribute('href').trim();
+        expect(href.length, `El href de ${label} no debe estar vacío`).toBeGreaterThan(0);
+        expect(
+          href.includes('kiro.dev'),
+          `El href de ${label} debe apuntar al sitio oficial kiro.dev`,
+        ).toBe(true);
+      },
+    );
+  }
 });

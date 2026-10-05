@@ -1,17 +1,18 @@
 {
-  "eventName": "Kiro LATAM - Kiro University Challenge",
+  "eventName": "Kiro LATAM - Kiro Day Medellín",
   "challenge": {
-    "title": "Kiro University Challenge",
-    "description": "El Kiro University Challenge ya está oficialmente en marcha!\n\n¿Buscas llevar tus habilidades de desarrollo al siguiente nivel y construir un proyecto real?\nDurante esta semana, Kiro University presenta un reto práctico e intensivo para desarrolladores. Completa las lecciones diarias, presenta tu proyecto final y obtén 5.500 créditos Kiro.\nYa sea que estés construyendo tu primer proyecto o explorando nuevas herramientas, esta es tu oportunidad para experimentar, aprender y mostrar tu talento.\n\n¡Acepta el desafío y comparte con la comunidad de lo que eres capaz!",
+    "title": "Reto abierto: construye con el máximo de herramientas de Kiro",
+    "description": "Un reto completamente abierto: construye el proyecto que quieras usando Kiro, con una sola meta — aprovechar la mayor cantidad posible de sus herramientas. Combina Specs, Skills, Powers, Steering, Hooks y más para llevar tu idea de concepto a código. Entre más herramientas uses de forma significativa, mejor.",
     "steps": [
-      "🔹 Lecciones 1 y 2 disponibles hoy: Comienza en https://kiro.dev/2026/university/",
-      "🔹 Contenido: 7 lecciones prácticas a lo largo de la semana",
-      "🔹 Presentación final: Entrega tu proyecto completado el 5 de octubre",
-      "🔹 ¿Quién puede participar?: Abierto a estudiantes, quienes inician en la programación y desarrolladores que buscan actualizar su stack"
+      "Elige libremente qué proyecto quieres construir con Kiro",
+      "Genera el Spec de tu proyecto (requisitos, diseño y tareas) con Kiro",
+      "Usa la mayor cantidad de herramientas posible: Skills, Powers, Steering, Hooks, MCP, etc.",
+      "Implementa el proyecto ejecutando las tareas junto a Kiro",
+      "Comparte tu resultado y cuéntale a la comunidad qué herramientas usaste"
     ],
     "successCriteria": [
       "El spec fue generado y aprobado",
-      "Uso de las herramientas: MCP, Steerings, Skill, Powers, etc",
+      "Se usó la mayor cantidad posible de herramientas de Kiro: Spec, Skills, Powers, Steering, Hooks, MCP, etc.",
       "El código fue generado usando Kiro"
     ]
   },
