@@ -11,7 +11,7 @@
       "Comparte tu resultado y cuéntale a la comunidad qué herramientas usaste"
     ],
     "successCriteria": [
-      "El spec fue generado y aprobado",
+      "El spec fue generado, validado y aprobado",
       "Se usó la mayor cantidad posible de herramientas de Kiro: Spec, Skills, Powers, Steering, Hooks, MCP, etc.",
       "El código fue generado usando Kiro"
     ]
